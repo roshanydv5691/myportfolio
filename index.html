@@ -1,11 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roshan Yadav | Portfolio</title>
+  <meta name="description" content="Portfolio of Roshan Yadav — CS Teacher, Bootcamp Student & Aspiring Developer from Nepal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>This is roshan yadav</h1>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">RY<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#education" id="nav-education">Education</a></li>
+        <li><a href="#experience" id="nav-experience">Experience</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting animate-in">Hello, I'm</p>
+        <h1 class="hero-name animate-in delay-1">Roshan <span class="gold">Yadav</span></h1>
+        <div class="hero-roles animate-in delay-2">
+          <span class="role-badge">📚 CS Teacher</span>
+          <span class="role-badge">💻 Bootcamp Student</span>
+          <span class="role-badge">🚀 Aspiring Developer</span>
+        </div>
+        <p class="hero-desc animate-in delay-3">
+          Passionate about education and technology. Currently teaching Computer Science
+          while leveling up my development skills at bootcamp.
+        </p>
+        <div class="hero-cta animate-in delay-4">
+          <a href="#contact" class="btn btn-primary" id="hero-contact-btn">Get In Touch</a>
+          <a href="#projects" class="btn btn-outline" id="hero-projects-btn">View Projects</a>
+        </div>
+      </div>
+      <div class="hero-image animate-in delay-2">
+        <div class="avatar-ring">
+          <img src="avatar.jpg" alt="Roshan Yadav" class="avatar-img" id="hero-avatar" />
+        </div>
+        <div class="floating-card card-top" id="float-card-1">
+          <span>🎓</span> Class XII Passed
+        </div>
+        <div class="floating-card card-bottom" id="float-card-2">
+          <span>👨‍💻</span> Learning Web Dev
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" id="scroll-down-btn" aria-label="Scroll down">
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gold">Me</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card" id="about-card-1">
+          <div class="about-icon">🙋‍♂️</div>
+          <h3>My Story</h3>
+          <p>
+            Hi! I'm <strong>Roshan Yadav</strong>, a passionate educator and aspiring developer.
+            After completing my Class XII, I've taken a bold step into the tech world by joining a
+            coding bootcamp — all while continuing to teach Computer Science at school and tuition.
+          </p>
+        </div>
+        <div class="about-card" id="about-card-2">
+          <div class="about-icon">🎯</div>
+          <h3>My Goal</h3>
+          <p>
+            I believe that teaching and learning can go hand-in-hand. My goal is to blend my
+            passion for education with modern technology — building projects that make a real
+            difference, while inspiring my students to explore the world of computers.
+          </p>
+        </div>
+        <div class="about-card" id="about-card-3">
+          <div class="about-icon">⚡</div>
+          <h3>What Drives Me</h3>
+          <p>
+            Every day I learn something new — whether it's an HTML layout, a Photoshop trick,
+            or a new way to explain a concept to a student. Growth and consistency are my
+            superpowers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Background</span>
+        <h2 class="section-title">Education</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" id="edu-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2024 – Present</span>
+              <span class="timeline-status status-active">Active</span>
+            </div>
+            <h3>Coding Bootcamp</h3>
+            <p class="timeline-sub">Web Development & Design</p>
+            <p>Intensive bootcamp covering HTML, CSS, JavaScript, Photoshop, and modern web development practices. Building real-world projects to create a strong portfolio.</p>
+            <div class="timeline-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Photoshop</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" id="edu-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2024</span>
+              <span class="timeline-status status-done">Completed</span>
+            </div>
+            <h3>Class XII (Grade 12)</h3>
+            <p class="timeline-sub">Higher Secondary Education</p>
+            <p>Successfully passed Class XII examinations. This milestone marked the beginning of my journey into higher education and professional development.</p>
+            <div class="timeline-tags">
+              <span>Computer Science</span><span>Mathematics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Do</span>
+        <h2 class="section-title">Teaching <span class="gold">Experience</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-card" id="exp-card-school">
+          <div class="exp-icon-wrap">
+            <div class="exp-icon">🏫</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <h3>School Teacher</h3>
+              <span class="exp-badge">Present</span>
+            </div>
+            <p class="exp-role">Computer Science Educator</p>
+            <p class="exp-desc">
+              Teaching Computer Science to students in school. Covering fundamentals of computing,
+              basic programming concepts, and digital literacy to help students build a strong foundation.
+            </p>
+            <ul class="exp-highlights">
+              <li>🖥️ Teaching CS fundamentals & basic programming</li>
+              <li>📋 Designing lesson plans & assignments</li>
+              <li>🤝 Mentoring students one-on-one</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-card" id="exp-card-tuition">
+          <div class="exp-icon-wrap">
+            <div class="exp-icon">📖</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <h3>Tuition Teacher</h3>
+              <span class="exp-badge">Present</span>
+            </div>
+            <p class="exp-role">Private Tutor – Computer Science</p>
+            <p class="exp-desc">
+              Providing personalized tutoring sessions to students outside of school hours.
+              Focusing on exam preparation, concept clarity, and practical computer skills.
+            </p>
+            <ul class="exp-highlights">
+              <li>📝 Exam preparation & revision support</li>
+              <li>💡 Simplifying complex CS concepts</li>
+              <li>🎯 Personalized learning approach</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gold">Skills</span></h2>
+        <div class="title-underline"></div>
+        <p class="section-note">Currently learning and growing every day 🌱</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" id="skill-html">
+          <div class="skill-icon">🌐</div>
+          <h4>HTML</h4>
+          <p>Building the structure of web pages — currently learning at bootcamp.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--width: 55%" data-level="55"></div>
+          </div>
+          <span class="skill-level">Learning</span>
+        </div>
+        <div class="skill-card" id="skill-css">
+          <div class="skill-icon">🎨</div>
+          <h4>CSS</h4>
+          <p>Styling and designing beautiful web interfaces with layouts and animations.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--width: 45%" data-level="45"></div>
+          </div>
+          <span class="skill-level">Learning</span>
+        </div>
+        <div class="skill-card" id="skill-js">
+          <div class="skill-icon">⚡</div>
+          <h4>JavaScript</h4>
+          <p>Adding interactivity and logic to web pages — exploring the fundamentals.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--width: 30%" data-level="30"></div>
+          </div>
+          <span class="skill-level">Beginner</span>
+        </div>
+        <div class="skill-card" id="skill-ps">
+          <div class="skill-icon">🖼️</div>
+          <h4>Photoshop</h4>
+          <p>Creating graphics, editing images and designing visual content.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--width: 40%" data-level="40"></div>
+          </div>
+          <span class="skill-level">Learning</span>
+        </div>
+        <div class="skill-card" id="skill-teaching">
+          <div class="skill-icon">👨‍🏫</div>
+          <h4>Teaching</h4>
+          <p>Explaining complex concepts clearly to students of different levels.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--width: 85%" data-level="85"></div>
+          </div>
+          <span class="skill-level">Strong</span>
+        </div>
+        <div class="skill-card" id="skill-cs">
+          <div class="skill-icon">💻</div>
+          <h4>Computer Science</h4>
+          <p>Solid understanding of CS fundamentals — algorithms, logic, and computing basics.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--width: 70%" data-level="70"></div>
+          </div>
+          <span class="skill-level">Good</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Projects &amp; <span class="gold">Bootcamp Work</span></h2>
+        <div class="title-underline"></div>
+        <p class="section-note">Projects I'm building as I learn 🛠️</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" id="project-portfolio">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <span>🌐</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" id="project-portfolio-link">View Project</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3>Personal Portfolio</h3>
+            <p>This very portfolio website — built from scratch as my first major bootcamp project, showcasing my journey and skills.</p>
+          </div>
+        </div>
+        <div class="project-card project-coming" id="project-coming-1">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <span>🚀</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Coming Soon</span>
+            </div>
+            <h3>Next Project</h3>
+            <p>Currently in progress at bootcamp. Stay tuned — something exciting is coming soon!</p>
+          </div>
+        </div>
+        <div class="project-card project-coming" id="project-coming-2">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <span>💡</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Coming Soon</span>
+            </div>
+            <h3>Future Project</h3>
+            <p>More projects will be added as I progress through the bootcamp and build new skills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gold">Touch</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Whether you want to discuss teaching opportunities, collaborate on a project,
+            or just say hi — my inbox is always open! 😊
+          </p>
+          <div class="contact-items">
+            <div class="contact-item" id="contact-email">
+              <div class="contact-icon">📧</div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">roshanyadav@email.com</span>
+              </div>
+            </div>
+            <div class="contact-item" id="contact-location">
+              <div class="contact-icon">📍</div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Nepal</span>
+              </div>
+            </div>
+            <div class="contact-item" id="contact-available">
+              <div class="contact-icon">✅</div>
+              <div>
+                <span class="contact-label">Status</span>
+                <span class="contact-value">Open to Opportunities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="submit-btn">Send Message 🚀</button>
+          <div class="form-success" id="form-success">
+            ✅ Thank you! Your message has been sent. I'll get back to you soon!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed &amp; Built with ❤️ by <span class="gold">Roshan Yadav</span>
+      </p>
+      <p class="footer-sub">© 2025 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
